@@ -1,18 +1,17 @@
+import { BoomBody } from "./boombody";
+import { Speaker } from "./speaker";
+
 function BoomBox() {
   return (
     <svg version="1.1" baseProfile="tiny" id="Layer_1" className="boombox" x="0px" y="0px" viewBox="0 0 800 477" overflow="visible">
-      <path fill="#00582B" d="M800,457c0,11-9,20-20,20H20c-11,0-20-9-20-20V97c0-11,9-20,20-20h760c11,0,20,9,20,20V457z"/>
-      <g>
-        <circle fill="#09743E" cx="150" cy="337" r="120"/>
-        <circle fill="#168F52" cx="150" cy="337" r="100"/>
-        <circle fill="#00582B" cx="150" cy="337" r="30"/>
-      </g>
+      <BoomBody />
+      <Speaker xPos="150" />
       <g>
         <circle fill="#09743E" cx="650" cy="337" r="120"/>
         <circle fill="#168F52" cx="650" cy="337" r="100"/>
         <circle fill="#00582B" cx="650" cy="337" r="30"/>
       </g>
-      <path fill="#00582B" d="M720,0.5H80c-5.5,0-10,4.5-10,10v5v5v57h30v-47h600v47h30v-57v-5v-5C730,5,725.5,0.5,720,0.5z"/>
+
       <g>
         <circle fill="#168F52" cx="150" cy="162" r="35"/>
         <rect x="149.5" y="172" fill="#00582B" width="2" height="20"/>
@@ -24,6 +23,7 @@ function BoomBox() {
         <rect x="157" y="104" fill="#168F52" width="2" height="14"/>
         <rect x="161" y="103" fill="#168F52" width="2" height="15"/>
       </g>
+
       <g>
         <circle fill="#168F52" cx="650" cy="162" r="35"/>
         <rect x="649" y="172" fill="#00582B" width="2" height="20"/>
@@ -35,6 +35,8 @@ function BoomBox() {
         <rect x="656" y="104" fill="#168F52" width="2" height="14"/>
         <rect x="660" y="103" fill="#168F52" width="2" height="15"/>
       </g>
+
+
       <g>
         <rect x="300" y="227" fill="#09743E" width="200" height="200"/>
         <rect x="310" y="237" fill="#168F52" width="180" height="110"/>
@@ -59,6 +61,8 @@ function BoomBox() {
         <rect x="429" y="368" fill="#00582B" width="5" height="28"/>
         <rect x="437" y="368" fill="#00582B" width="5" height="28"/>
       </g>
+
+
     </svg>    
   );
 }

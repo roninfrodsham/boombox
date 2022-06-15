@@ -1,10 +1,7 @@
-import { useState } from 'react'
-import { BoomBox } from './components/Boombox'
+import { BoomBox } from './components/boombox'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
       <BoomBox />
