@@ -1,4 +1,4 @@
-function Speaker( { xPos }: { xPos: string } ) {
+function Speaker( { xPos }: { xPos: number } ) {
   return (
     <g>
       <circle fill="#09743E" cx={xPos} cy="337" r="120"/>

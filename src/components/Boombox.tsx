@@ -8,10 +8,10 @@ function BoomBox() {
   return (
     <svg version="1.1" baseProfile="tiny" id="Layer_1" className="boombox" x="0px" y="0px" viewBox="0 0 800 477" overflow="visible">
       <BoomBody />
-      <Speaker xPos="150" />
-      <Speaker xPos="650" />
+      <Speaker xPos={150} />
+      <Speaker xPos={650} />
       <VolumeIcon />
-      <Rotary />
+      <Rotary xPos={150} />
       <PanIcon />
       <g>
         <circle fill="#168F52" cx="650" cy="162" r="35"/>
