@@ -1,39 +1,21 @@
 import { BoomBody } from "./boombody";
+import { PanIcon } from "./panicon";
+import { Rotary } from "./rotary";
 import { Speaker } from "./speaker";
+import { VolumeIcon } from "./volumeicon";
 
 function BoomBox() {
   return (
     <svg version="1.1" baseProfile="tiny" id="Layer_1" className="boombox" x="0px" y="0px" viewBox="0 0 800 477" overflow="visible">
       <BoomBody />
       <Speaker xPos="150" />
-      <g>
-        <circle fill="#09743E" cx="650" cy="337" r="120"/>
-        <circle fill="#168F52" cx="650" cy="337" r="100"/>
-        <circle fill="#00582B" cx="650" cy="337" r="30"/>
-      </g>
-
-      <g>
-        <circle fill="#168F52" cx="150" cy="162" r="35"/>
-        <rect x="149.5" y="172" fill="#00582B" width="2" height="20"/>
-        <rect x="141" y="108" fill="#168F52" width="2" height="10"/>
-        <rect x="137" y="109" fill="#168F52" width="2" height="9"/>
-        <rect x="145" y="107" fill="#168F52" width="2" height="11"/>
-        <rect x="149" y="106" fill="#168F52" width="2" height="12"/>
-        <rect x="153" y="105" fill="#168F52" width="2" height="13"/>
-        <rect x="157" y="104" fill="#168F52" width="2" height="14"/>
-        <rect x="161" y="103" fill="#168F52" width="2" height="15"/>
-      </g>
-
+      <Speaker xPos="650" />
+      <VolumeIcon />
+      <Rotary />
+      <PanIcon />
       <g>
         <circle fill="#168F52" cx="650" cy="162" r="35"/>
         <rect x="649" y="172" fill="#00582B" width="2" height="20"/>
-        <rect x="640" y="104" fill="#168F52" width="2" height="14"/>
-        <rect x="636" y="103" fill="#168F52" width="2" height="15"/>
-        <rect x="644" y="105" fill="#168F52" width="2" height="13"/>
-        <rect x="648" y="106" fill="#168F52" width="2" height="12"/>
-        <rect x="652" y="105" fill="#168F52" width="2" height="13"/>
-        <rect x="656" y="104" fill="#168F52" width="2" height="14"/>
-        <rect x="660" y="103" fill="#168F52" width="2" height="15"/>
       </g>
 
 
