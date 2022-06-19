@@ -27,13 +27,15 @@ function BoomBox() {
     source = ctx.createBufferSource();
     source.buffer = audio;
     source.connect(ctx.destination);
-    source.start();
+    paused ? source.resume() : source.start();
     source.loop = true;
   }
 
   function pause() {
     console.log(source.context.currentTime);
-    source.stop();
+    setCurrentTime(source.context.currentTime);
+    setPaused(true);
+    source.suspend();
   }
 
 
