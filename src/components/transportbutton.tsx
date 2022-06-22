@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-function TransportButton({ onClick, buttonType, isPlaying, paused }: { onClick: () => void, buttonType: string, isPlaying: boolean, paused: boolean }) {
+function TransportButton({ onClick, buttonType, isPlaying }: { onClick: () => void, buttonType: string, isPlaying: boolean }) {
   return (
     <motion.g onClick={onClick} className="button" whileHover={{ scale: 1.2 }}>
       {buttonType === 'play' ? (
